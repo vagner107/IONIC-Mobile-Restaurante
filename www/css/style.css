@@ -1,0 +1,59 @@
+.email.ng-valid{
+	color:green;
+}
+.email.ng-dirty.ng-invalid-required{
+	color:red;
+}
+.email.ng-dirty.ng-invalid-minlenght{
+	color:#6C6;
+}
+.wc_backgroud {
+  background: url(../img/lets1.png);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity:0.65;
+  -moz-opacity: 0.65;
+  filter: alpha(opacity=65);
+
+}
+.logo {
+  box-sizing: border-box;
+  background: url(../img/logo3.png) no-repeat;
+  height: 166px;
+  width: 137px; 
+  margin: 17% auto;
+}
+.wc_container {
+  width: 87%;
+  height: 100%;
+  margin: auto;
+  z-index: 2;
+}
+.footer{
+	background:none;
+}
+
+
+body {
+	cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+/*
+* http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+*/
+.list .item.item-accordion {
+    line-height: 19px;
+    /* padding-top: 0; */
+    /* padding-bottom: 0; */
+    transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+	line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+	display: block !important;
+}

@@ -1,0 +1,14 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <ion-list>
+        <div ng-repeat="todo in todos"> 	
+            <div ng-if="show(todo.voucher_usado)">
+                <ion-item>
+                    <b>{{todo.produto}}</b></br> 
+                    Data Validade: {{todo.data_validade_voucher}}
+                </ion-item>
+            </div>
+      	</div>
+     </ion-list>
+  </ion-content>
+</ion-view>

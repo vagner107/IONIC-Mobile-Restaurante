@@ -1,0 +1,27 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Fechar</button>
+    </div>
+  </ion-header-bar>
+	
+  <ion-content>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">E-mail</span>
+          <input class="email" name="email" type="text" ng-model="data.username" ng-minlenght="5" required>
+          <!--<input class="email" name="email" type="email" ng-model="loginData.username" ng-minlenght="5" required>-->
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Senha</span>
+          <input class="password" type="password" ng-model="data.password" ng-minlenght="4" required>
+        </label>
+        <label class="item">
+          <button class="button-block button button-energized" ng-click="login(data)">Log in</button>
+        </label>
+        
+      </div>
+  </ion-content>
+  
+</ion-modal-view>

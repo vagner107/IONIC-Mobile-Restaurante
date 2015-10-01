@@ -1,0 +1,22 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Recuperar Senha</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeSenha()">Fechar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doSenha()" name="senhaForm">
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input class="email" type="email" ng-model="senhaData.email" placeholder="Email" ng-minlenght="6" required>
+        </label>
+        <label class="item">
+          <button ng-disabled="senhaForm.$invalid" class="button-block button button-energized" type="submit">Recuperar</button>
+        </label>
+
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

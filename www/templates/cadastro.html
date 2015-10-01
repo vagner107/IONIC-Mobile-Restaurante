@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Cadastro</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCadastro()">Fechar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doCadastro()" name="cadastroDataForm">
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Nome Completo</span>
+                <input class="username" name="nome" type="text" ng-model="cadastroData.nome" 
+                		placeholder="Nome Completo" 
+                        ng-minlenght="4" required>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Data de Nascimento</span>
+                <!--<input class="date" type="datepicker" ng-model="cadastroData.data" ng-minlenght="4" placeholder="Data de Nascimento" required>-->
+                <input type="date" 
+                		ng-model="cadastroData.data" 
+                        placeholder="dd-mm-yyyy" 
+                        required />
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Email</span>
+                <input class="email" type="email" ng-model="cadastroData.email" 
+                			placeholder="Email" ng-minlenght="4" required>
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Senha</span>
+                <input class="password" type="password" ng-model="cadastroData.password" 
+                		placeholder="Senha" ng-minlenght="4" required>
+            </label>
+            <label class="item">
+                <button  class="button-block button button-energized"  ng-disabled="cadastroDataForm.$invalid" type="submit">Cadastrar</button>
+                <!--ng-disabled="cadastroDataForm.$invalid"-->
+            </label>
+        </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
