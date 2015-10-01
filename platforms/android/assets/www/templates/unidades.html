@@ -1,0 +1,20 @@
+<ion-view view-title="Unidades Lets Eat">
+    <ion-content>
+      <ion-list>
+            <div ng-repeat="unidade in unidades">
+              <ion-item class="item-stable"
+                        ng-click="toggleUnidade(unidade)"
+                        ng-class="{active: isUnidadeShown(unidade)}">
+                  <i class="icon" ng-class="isUnidadeShown(unidade) ? 'ion-minus' : 'ion-plus'"></i>
+                &nbsp;
+                {{unidade.title}}
+              </ion-item>
+              <ion-item class="item-accordion" ng-show="isUnidadeShown(unidade)">
+                <p>{{unidade.endereco}}</p>
+                <p>{{unidade.bairro}}</p>
+                <p>{{unidade.tel}}</p>
+              </ion-item>
+            </div>
+          </ion-list>
+    </ion-content>
+</ion-view>
